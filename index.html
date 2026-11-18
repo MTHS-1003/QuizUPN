@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Misión UPN</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+  <h1>Misión UPN</h1>
+  <p class="sub">Trivia diaria: 3 preguntas, gana XP y canjéala por medallas.</p>
+
+  <div class="stats">
+    <div class="stat">🔥 <span id="streak">0</span><small>días de racha</small></div>
+    <div class="stat">❤️ <span id="lives">3</span><small>vidas</small></div>
+    <div class="stat">⭐ <span id="xp">0</span><small>XP disponible</small></div>
+  </div>
+
+  <section class="panel" id="quiz">
+    <div class="bar"><i id="prog"></i></div>
+    <div class="fox"><img class="foxface" id="fox" alt="Atoq Yachaq"><div class="bubble" id="q"></div></div>
+    <div class="opts" id="opts"></div>
+    <div class="exp" id="exp"></div>
+    <button class="btn hidden" id="next">Siguiente</button>
+  </section>
+
+  <section class="panel center hidden" id="done">
+    <img class="foxface" id="foxdone" alt="Atoq Yachaq">
+    <div class="big" id="gain">+0 XP</div>
+    <p id="doneMsg"></p>
+    <p class="sub">Vuelve mañana para una nueva misión.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Medallas</h2>
+    <div class="medals" id="medals"></div>
+  </section>
+  <button class="reset" id="reset">Reiniciar progreso</button>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
